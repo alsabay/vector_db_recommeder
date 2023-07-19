@@ -95,3 +95,7 @@ def find_similar_items(user_input, k=5):
 7. **Adding User Profiles**: The notebook demonstrates how to add user profiles to make recommendations more personalized. A dictionary called 'user_profiles' is initialized to store liked items for each user. Functions `add_item_to_profile` and `get_user_recommendations` allow users to add items to their profiles and get personalized movie recommendations based on their profiles.
 
 8. **Sample Usage**: The notebook provides sample usage examples to demonstrate how to use the recommendation system. It shows how to get recommendations for a general movie preference (using `find_similar_items`) and how to get personalized recommendations for a user (using `get_user_recommendations`) based on their liked movies.
+
+```python
+liked_items = ['epic', 'overcomer', ...]  # Add some item names that the user liked.
+```
