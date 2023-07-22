@@ -60,7 +60,6 @@ print(f"Number of items with valid vectors: {len(item_vectors)}")
 5. **Setting up Faiss Index**: The 'item_vectors' are then converted to a NumPy array, which is used to initialize a Faiss index with L2 (Euclidean) distance metric. The item vectors are added to the Faiss index, and the index is saved to a file for future use.
 ```python
 # set up Faiss db
-# set up Faiss db
 import faiss
 import numpy as np
 
@@ -106,14 +105,14 @@ def find_similar_items(user_input, k=5):
         # Exclude the input item from the recommendations.
         similar_items = [item for item in similar_items if item != preprocessed_input
 ```
-8. **Sample Usage**: The notebook provides sample usage examples to demonstrate how to use the recommendation system. It shows how to get recommendations for a general movie preference (using `find_similar_items`) and how to get personalized recommendations for a user (using `get_user_recommendations`) based on their liked movies.
+7. **Sample Usage**: The notebook provides sample usage examples to demonstrate how to use the recommendation system. It shows how to get recommendations for a general movie preference (using `find_similar_items`) and how to get personalized recommendations for a user (using `get_user_recommendations`) based on their liked movies.
 ```python
 # Sample usage:
 user_input = input("Enter your preference or interest: ")
 find_similar_items(user_input)
 ```
 
-7. **Adding User Profiles**: The notebook demonstrates how to add user profiles to make recommendations more personalized. A dictionary called 'user_profiles' is initialized to store liked items for each user. Functions `add_item_to_profile` and `get_user_recommendations` allow users to add items to their profiles and get personalized movie recommendations based on their profiles.
+8. **Adding User Profiles**: The notebook demonstrates how to add user profiles to make recommendations more personalized. A dictionary called 'user_profiles' is initialized to store liked items for each user. Functions `add_item_to_profile` and `get_user_recommendations` allow users to add items to their profiles and get personalized movie recommendations based on their profiles.
 ```python
 # Movie Recommendations by UserID Demo
 
@@ -131,7 +130,8 @@ for item in liked_items:
 get_user_recommendations(user_id)
 
 ```
-Output:
+9. ***Sample Output:***
+
 UserID? <enter number> 3
 Enter item or items that you liked:  bumblebee anna underdogs
 Top-5 recommendations for User 3:
