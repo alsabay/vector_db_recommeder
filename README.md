@@ -4,7 +4,7 @@ The notebook showcases how to leverage Word2Vec embeddings, Faiss indexing, and 
 
 Here's a high-level description and explanation of the code:
 
-1. **Loading Word2Vec Model and Dataset**: The notebook starts by importing necessary libraries, capturing messages (output), and loading a pre-trained Word2Vec model using the Gensim library. It also reads a movie dataset (Movies_dataset.csv) using pandas.
+1. **Loading Word2Vec Model and Dataset**: The notebook starts by importing necessary libraries, capturing messages (output), and loading a pre-trained Word2Vec model using the Gensim library.
 ```python
 %%capture _messages
 
